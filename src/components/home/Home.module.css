@@ -32,26 +32,26 @@
   background-color: #eeeeee;
   color: #6794b3;
 }
-.sub_title{
-    position: relative;
+.sub_title {
+  position: relative;
 }
 .sub_title::after {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    left: 13px; 
-    transform: translateX(-50%); 
-    width: 35%; 
-    height: 1px;
-    background-color: rgb(45, 44, 44);
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 13px;
+  transform: translateX(-50%);
+  width: 35%;
+  height: 1px;
+  background-color: rgb(45, 44, 44);
 }
 
-@media only screen and (max-width:768px){
-.home{
+@media only screen and (max-width: 768px) {
+  .home {
     flex-direction: column;
     gap: 10px;
-}
-.membership {
-  max-width: 100%;
-}
+  }
+  .membership {
+    max-width: 100%;
+  }
 }
