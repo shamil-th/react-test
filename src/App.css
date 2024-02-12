@@ -12,13 +12,68 @@ body {
   max-width: 1200px;
   margin: auto;
 }
-button{
+button {
   border-radius: 20px;
 }
 button:hover {
   cursor: pointer;
 }
- span .material-symbols-outlined {
+span .material-symbols-outlined {
   color: blue;
   font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+img {
+  max-width: 100%;
+}
+
+.slick-list {
+  max-width: 690px !important;
+}
+.slick-slide {
+  margin-right: 15px !important;
+  margin-left: 15px !important;
+  width: 200px !important;
+}
+.slick-slider {
+  max-height: 300px !important;
+  width: fit-content !important;
+  margin-bottom: 40px;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black !important;
+}
+@media screen and (max-width: 1024px) {
+  .slick-list {
+    max-width: 460px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slick-list {
+    max-width: 460px !important;
+  }
+}
+@media screen and (max-width: 568px) {
+  .slick-list {
+    max-width: 320px !important;
+  }
+  .slick-slide {
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+    width: 200px !important;
+  }
+}
+@media screen and (max-width: 420px) {
+  .slick-list {
+    max-width: 300px !important;
+  }
+  .slick-slide {
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+    width: 160px !important;
+  }
 }
