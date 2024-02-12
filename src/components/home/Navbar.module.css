@@ -1,0 +1,100 @@
+.navbar {
+  width: 100%;
+}
+.NavList {
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.navbar .hamMenuHide {
+  display: block;
+  width: 100%;
+}
+.hamMenuShow {
+  display: none;
+}
+.navbar .list,
+.hide {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  font-size: 12px;
+  font-weight: 500;
+}
+.list li:hover {
+  cursor: pointer;
+}
+.user_icon p {
+  font-size: 12px;
+  margin: 0;
+  text-align: center;
+}
+.user_icon {
+  position: relative;
+  min-width: 80px;
+  text-align: center;
+}
+
+.person {
+  font-size: 32px;
+  color: var(--primary-color);
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+.database {
+  font-size: 16px;
+  position: absolute;
+  top: 19px;
+  right: 30px;
+  left: 40px;
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+@media only screen and (max-width: 768px) {
+  .NavList {
+    position: relative;
+    justify-content: space-between;
+  }
+  .navbar .hamMenuHide {
+    display: none;
+  }
+  .hamMenuShow {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+    z-index: 10;
+  }
+  .navbar .list {
+    flex-direction: column;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    background-color: #34766c;
+    color: var(--bg-color);
+    width: 100%;
+    min-height: 300px;
+    visibility: visible;
+    opacity: 1;
+    z-index: 5;
+    transition: all 400ms;
+  }
+  .navbar .hide {
+    left: -100%;
+    flex-direction: column;
+    position: absolute;
+    top: -20px;
+    visibility: hidden;
+    background-color: #34766c;
+    color: var(--bg-color);
+    width: 100%;
+    min-height: 300px;
+    opacity: 0;
+    transition: all 400ms;
+  }
+}

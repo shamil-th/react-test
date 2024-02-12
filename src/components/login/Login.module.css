@@ -1,0 +1,113 @@
+.login_page{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    height: 100%;
+    gap: 20px;
+}
+.title{
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+.input_box{
+    max-width: 50%;
+}
+.input_fields{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.input_fields input{
+    border-radius: 25px;
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+input:focus-visible {
+    outline:none;
+}
+.field{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.phone_input{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+.phone_input select{
+    width: 50%;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+.phone_input input{
+    width: 50%;
+}
+.button{
+    background-color: var(--primary-color);
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 0 5PX;
+    width: 100%;
+    color:var(--bg-color);
+    font-size: 16px;
+}
+
+.banner{
+    width: 50%;
+}
+.banner img{
+    max-width: 100%;
+}
+
+@media screen and ( max-width: 768px){
+
+    .login_page{
+        flex-direction: column-reverse;
+        margin-top: 40px;
+        /* padding: 10px; */
+        max-width: 90%;
+    }
+    .banner{
+        width: 100%;
+    }
+    .banner img{
+        width: 100%;
+    }
+    .input_box{
+        max-width: 100%;
+        /* width: 100%; */
+    }
+    .title{
+        width: 100%;
+        font-size: 28px;
+    }
+}
+@media screen and ( max-width: 425px){
+    .phone_input input{
+        width: unset;
+        /* max-width: 100%; */
+    }
+    .phone_input select{
+        width: 100%;
+    }
+    .phone_input{
+        flex-direction: column;
+    }
+    .title{
+        font-size: 24px;
+    }
+    .login_page label{
+        font-size: 14px;
+    }
+    .login_page p{
+        font-size: 14px;
+    }
+}
